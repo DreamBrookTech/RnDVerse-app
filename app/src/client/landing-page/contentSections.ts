@@ -4,66 +4,67 @@ import avatarPlaceholder from '../static/avatar-placeholder.png';
 
 export const navigation = [
   { name: 'Features', href: '#features' },
+  { name: 'Roadmap', href: '#roadmap' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Documentation', href: DOCS_URL },
   { name: 'Blog', href: BLOG_URL },
 ];
 export const features = [
   {
-    name: 'Cool Feature #1',
-    description: 'Describe your cool feature here.',
+    name: 'Research Processing Unit (RPU)',
+    description: 'Integrated Cyber-Physical R&D Operating System',
     icon: '🤝',
     href: DOCS_URL,
   },
   {
-    name: 'Cool Feature #2',
-    description: 'Describe your cool feature here.',
+    name: 'PhDBot',
+    description: 'Domain Expert for Scientific Research Planning and Analysis',
     icon: '🔐',
     href: DOCS_URL,
   },
   {
-    name: 'Cool Feature #3',
-    description: 'Describe your cool feature here.',
+    name: 'CloudSpace',
+    description: 'Integrated Open-Source Scientific SaaS Platform',
     icon: '🥞',
     href: DOCS_URL,
   },
   {
-    name: 'Cool Feature #4',
-    description: 'Describe your cool feature here.',
+    name: 'ALFONSO',
+    description: 'DePIN ecosystem for scientific RnD.',
     icon: '💸',
     href: DOCS_URL,
   },
 ];
 export const testimonials = [
   {
-    name: 'Da Boi',
-    role: 'Wasp Mascot',
+    name: 'User #1',
+    role: 'CEO',
     avatarSrc: daBoiAvatar,
     socialUrl: 'https://twitter.com/wasplang',
-    quote: "I don't even know how to code. I'm just a plushie.",
+    quote: "RnDVerse is a Pioneer in Metaverse for Scientific RnD application",
   },
   {
-    name: 'Mr. Foobar',
-    role: 'Founder @ Cool Startup',
+    name: 'User #2',
+    role: 'Professor @ Ivy League Univ',
     avatarSrc: avatarPlaceholder,
     socialUrl: '',
-    quote: 'This product makes me cooler than I already am.',
+    quote: 'This platforms changes the way research is done.',
   },
   {
-    name: 'Jamie',
-    role: 'Happy Customer',
+    name: 'User #3',
+    role: 'Researcher @ Corporate ',
     avatarSrc: avatarPlaceholder,
     socialUrl: '#',
-    quote: 'My cats love it!',
+    quote: 'RnDVerse helps me do 10x more productive with my team research and development task, in a fraction of the cost!',
   },
 ];
 
 export const faqs = [
   {
     id: 1,
-    question: 'Whats the meaning of life?',
-    answer: '42.',
-    href: 'https://en.wikipedia.org/wiki/42_(number)',
+    question: 'Roadmap for RnDVerse?',
+    answer: 'Learn more from our page',
+    href: 'https://rndverse.com',
   },
 ];
 export const footerNavigation = {
@@ -72,7 +73,7 @@ export const footerNavigation = {
     { name: 'Blog', href: BLOG_URL },
   ],
   company: [
-    { name: 'About', href: 'https://wasp-lang.dev' },
+    { name: 'About', href: 'https://rndverse.com' },
     { name: 'Privacy', href: '#' },
     { name: 'Terms of Service', href: '#' },
   ],

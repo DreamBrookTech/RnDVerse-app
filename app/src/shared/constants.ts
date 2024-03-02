@@ -6,8 +6,8 @@ export enum TierIds {
   ENTERPRISE = 'enterprise-tier',
 }
 
-export const DOCS_URL = 'https://docs.opensaas.sh';
-export const BLOG_URL = 'https://docs.opensaas.sh/blog';
+export const DOCS_URL = 'https://docs.rndverse.com';
+export const BLOG_URL = 'https://docs.rndverse.com/blog';
 
 const isDevEnv = process.env.NODE_ENV !== 'production';
 const customerPortalTestUrl = '<your-url-here>'; // TODO: find your test url at https://dashboard.stripe.com/test/settings/billing/portal

@@ -5,8 +5,8 @@ import { Dialog } from '@headlessui/react';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { HiBars3 } from 'react-icons/hi2';
 import { BiLogIn } from 'react-icons/bi';
-import logo from '../static/logo.png';
-import openSaasBanner from '../static/open-saas-banner.png';
+import logo from '../static/RnDVerse_logo.png';
+import RnDVerseBanner from '../static/RnDVerse_banner.png';
 import { features, navigation, faqs, footerNavigation, testimonials } from './contentSections';
 import DropdownUser from '../components/DropdownUser';
 import { DOCS_URL } from '../../shared/constants';
@@ -18,7 +18,7 @@ export default function LandingPage() {
 
   const { data: user, isLoading: isUserLoading } = useAuth();
 
-  const NavLogo = () => <img className='h-8 w-8' src={logo} alt='Your SaaS App' />;
+  const NavLogo = () => <img className='h-16 w-16' src={logo} alt='RnDVerse Logo' />;
 
   return (
     <div className='bg-white dark:text-white dark:bg-boxdark-2'>
@@ -31,7 +31,7 @@ export default function LandingPage() {
               className='flex items-center -m-1.5 p-1.5 text-gray-900 duration-300 ease-in-out hover:text-yellow-500'
             >
               <NavLogo />
-              <span className='ml-2 text-sm font-semibold leading-6 dark:text-white'>Your Saas</span>
+              <span className='ml-2 text-md font-semibold leading-6 dark:text-white'>RnDVerse</span>
             </a>
           </div>
           <div className='flex lg:hidden'>
@@ -78,7 +78,7 @@ export default function LandingPage() {
           <Dialog.Panel className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-boxdark dark:text-white'>
             <div className='flex items-center justify-between'>
               <a href='/' className='-m-1.5 p-1.5'>
-                <span className='sr-only'>Your SaaS</span>
+                <span className='sr-only'>RnDVerse</span>
                 <NavLogo />
               </a>
               <button
@@ -150,10 +150,10 @@ export default function LandingPage() {
             <div className='mx-auto max-w-8xl px-6 lg:px-8'>
               <div className='lg:mb-18 mx-auto max-w-3xl text-center'>
                 <h1 className='text-4xl font-bold text-gray-900 sm:text-6xl dark:text-white'>
-                  Some <span className='italic'>cool</span> words about your product
+                  Decentralized Scientific Research Ecosystem
                 </h1>
                 <p className='mt-6 mx-auto max-w-2xl text-lg leading-8 text-gray-600 dark:text-white'>
-                  With some more exciting words about your product!
+                  We drive what's possible in decentralized research and open science 
                 </p>
                 <div className='mt-10 flex items-center justify-center gap-x-6'>
                   <a
@@ -167,8 +167,8 @@ export default function LandingPage() {
               <div className='mt-14 flow-root sm:mt-14 '>
                 <div className='-m-2 rounded-xl  lg:-m-4 lg:rounded-2xl lg:p-4'>
                   <img
-                    src={openSaasBanner}
-                    alt='App screenshot'
+                    src={RnDVerseBanner}
+                    alt='Banner for RnDVerse'
                     width={2432}
                     height={1442}
                     className='rounded-md shadow-2xl ring-1 ring-gray-900/10'
@@ -182,7 +182,7 @@ export default function LandingPage() {
         {/* Clients section */}
         <div className='mt-12 mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-between gap-y-6'>
           <h2 className='mb-6 text-center font-semibold tracking-wide text-gray-500 dark:text-white'>
-            Built with / Used by:
+            In Collaboration with / Used by:
           </h2>
 
           <div className='mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl md:grid-cols-4 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none'>
@@ -250,11 +250,11 @@ export default function LandingPage() {
         <div id='features' className='mx-auto mt-48 max-w-7xl px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl text-center'>
             <p className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white'>
-              The <span className='text-yellow-500'>Best</span> Features
+              Doing world-class Research through <span className='text-yellow-500'>Better</span> ways
             </p>
             <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
-              Don't work harder.
-              <br /> Work smarter.
+             we accelerate research.
+              <br /> we incubate innovation.
             </p>
           </div>
           <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
@@ -279,7 +279,7 @@ export default function LandingPage() {
           <div className='relative sm:left-5 -m-2 rounded-xl bg-yellow-400/20 lg:ring-1 lg:ring-yellow-500/50 lg:-m-4 '>
             <div className='relative sm:top-5 sm:right-5 bg-gray-900 dark:bg-boxdark px-8 py-20 shadow-xl sm:rounded-xl sm:px-10 sm:py-16 md:px-12 lg:px-20'>
               <h2 className='text-left text-xl font-semibold tracking-wide leading-7 text-gray-500 dark:text-white'>
-                What Our Users Say
+                More about our RnD Platform
               </h2>
               <div className='relative flex flex-wrap gap-6 w-full mt-6 z-10 justify-between lg:mx-0'>
                 {testimonials.map((testimonial) => (
